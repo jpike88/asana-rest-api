@@ -35,10 +35,10 @@ To get started this module supports streaming (*streams2*) and callbacks, but to
 var asana = require('asana-rest-api');
 var api = new asana('key-you-have-copied');
 api.workspaces.list().on('readable',function(){
-    console.log('A workspace object:',this.read());
+    // console.log('A workspace object:',this.read());
 }).on('end',function(){
-    console.log('All workspaces received.');
+    // console.log('All workspaces received.');
 }).on('error',function(err){
-    console.log('An API error: ',err);
+    // console.log('An API error: ',err);
 });
 ```

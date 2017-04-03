@@ -125,7 +125,7 @@ test('Fill workspace with tasks',function(t){
                     if(!addToProject){
                         addToProject = true;
                         obj.projects = [process.env.projects.split(',')[0]];
-console.log('add to project1:',obj);
+// console.log('add to project1:',obj);
                     }
                     createListeners(api.task.create(obj),t2,last,function(data,lastItem){
                         process.env.tasks += data.id +',';
@@ -216,6 +216,6 @@ test('Fill workspace with tags',function(t){
 test.test('Cleanup tags',function(t){
     //ensure it will be done after all additions
     process.env.tags = cleanup(process.env.tags);
-    console.log('PROJECTS:',process.env.projects);
+    // console.log('PROJECTS:',process.env.projects);
     t.end();
 })

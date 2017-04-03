@@ -11,11 +11,11 @@ This npm module is ment to use the Asana REST API in a structured manner within 
 var asana = require('asana-rest-api');
 var api = new asana('key-you-have-downloaded');
 api.workspaces.list().on('readable',function(){
-    console.log('A workspace:',this.read());
+    // console.log('A workspace:',this.read());
 }).on('end',function(){
-    console.log('All workspaces received.');
+    // console.log('All workspaces received.');
 }).on('error',function(err){
-    console.log('An API error: ',err);
+    // console.log('An API error: ',err);
 });
 ```
 
@@ -84,11 +84,11 @@ This example will override the default return fields of ```workspaces.list``` (s
 ```javascript
 ...
 api.workspaces.list({fields:['name']}).on('readable',function(){
-    console.log('A workspace:',this.read());
+    // console.log('A workspace:',this.read());
 }).on('end',function(){
-    console.log('All workspaces received.');
+    // console.log('All workspaces received.');
 }).on('error',function(err){
-    console.log('An API error: ',err);
+    // console.log('An API error: ',err);
 });
 ```
 
@@ -102,11 +102,11 @@ You can use this module with a callback or a [streams2](https://github.com/subst
 ```javascript
 ...
 api.workspaces.list().on('readable',function(){
-    console.log('A workspace:',this.read());
+    // console.log('A workspace:',this.read());
 }).on('end',function(){
-    console.log('All workspaces received.');
+    // console.log('All workspaces received.');
 }).on('error',function(err){
-    console.log('An API error: ',err);
+    // console.log('An API error: ',err);
 });
 ```
 
