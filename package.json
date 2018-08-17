@@ -26,7 +26,7 @@
   "main": "index.js",
   "dependencies": {
     "JSONStream": "0.9.x",
-    "lodash": "2.4.x",
+    "lodash": "4.17.5",
     "request": "^2.87.0"
   },
   "devDependencies": {
